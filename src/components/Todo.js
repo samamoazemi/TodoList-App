@@ -1,10 +1,10 @@
-const Todo = ({ todo }) => {
+const Todo = ({ todo, onComplete }) => {
     return(
-        <div key={todo.id}>
+        <div className="todo">
           <div>{todo.text}</div>
           <div>
              <button>Edit</button>
-             <button>complete</button>
+             <button onClick={onComplete}>complete</button>
           </div>
         </div>
     )
