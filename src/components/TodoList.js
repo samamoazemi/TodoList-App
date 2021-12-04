@@ -1,7 +1,6 @@
 import Todo from "./Todo";
 
 const TodoList = ({todos, onComplete}) => {
-
     const renderTodos = () => {
         if (todos.length === 0) return <p>add some todos</p>;
 
