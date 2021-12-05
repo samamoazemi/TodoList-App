@@ -30,3 +30,12 @@
   text-decoration: line-through;
   color: #ccc;
 }
+input{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 3px;
+  outline: none;
+}
+input:focus{
+  border: 1px solid blueviolet;
+}
