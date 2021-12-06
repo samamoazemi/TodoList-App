@@ -26,6 +26,11 @@
   width: 20rem;
   margin: 10px 0;
 }
+.todoText{
+  cursor: pointer;
+  font-weight: bold;
+
+}
 .completed{
   text-decoration: line-through;
   color: #ccc;
@@ -65,4 +70,22 @@ input:focus{
 .addTodo{
   color: #fff;
   background-color: #6d28d9;
+}
+header{
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+header span{
+  margin-right: 20px;
+  display: inline-block;
+  width: 20px;
+  font-size: 14px;
+  height: 20px;
+  background-color: #d0c7f7;
+  color: #6d28d9;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

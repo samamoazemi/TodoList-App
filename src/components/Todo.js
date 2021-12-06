@@ -3,7 +3,9 @@ const Todo = ({ todo, onComplete, onDelete, onEdit }) => {
         <div className="todo">
           <div
            onClick={onComplete} 
-           className={todo.isCompleted ? "completed" : "" }>{todo.text}
+           className={`todoText ${todo.isCompleted ? "completed" : "" }`}
+           >
+             {todo.text}
           </div>
           <div>
              <button className="btn" onClick={onEdit}>Edit</button>
