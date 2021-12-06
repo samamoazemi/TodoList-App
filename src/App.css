@@ -89,3 +89,7 @@ header span{
   justify-content: center;
   align-items: center;
 }
+.select{
+  width: 170px;
+  margin-left: 10px;
+}
