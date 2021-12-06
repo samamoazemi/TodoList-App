@@ -35,7 +35,34 @@ input{
   border-radius: 5px;
   padding: 5px 3px;
   outline: none;
+  width: 200px;
 }
 input:focus{
-  border: 1px solid blueviolet;
+  border: 2px solid blueviolet;
+}
+.formComtrol{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20rem;
+  margin-bottom: 20px;
+}
+.btn{
+
+  color: #6d28d9;
+  background-color: #fff;
+  border: 1px solid #6d28d9;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.remove{
+  color: rgb(236, 68, 68);
+  border: 1px solid rgb(236, 68, 68);
+  margin-left: 10px;
+}
+.addTodo{
+  color: #fff;
+  background-color: #6d28d9;
 }

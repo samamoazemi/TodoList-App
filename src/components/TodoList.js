@@ -10,6 +10,7 @@ const TodoList = ({ todos, onComplete, onDelete, onUpdateTodo }) => {
         onUpdateTodo(edit.id,newValue)
         setEdit({ id: null, text:"" })
     }
+    
     const renderTodos = () => {
         if (todos.length === 0) return <p>add some todos</p>;
 
