@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import NavBar from "./NavBar";
-import TodoForm from "./TodoForm";
-import TodoList from "./TodoList";
+import NavBar from "../Navbar/NavBar";
+import TodoForm from "../TodoForm/TodoForm";
+import TodoList from "../TodoList/TodoList";
 
 const TodoApp = () => {
     const[todos, setTodos] = useState([]);
@@ -69,17 +69,18 @@ const TodoApp = () => {
     return(
         <div className="container">
             <NavBar 
-            unCompletedTodos={todos.filter((t) => !t.isCompleted).length} 
-            selectedOption={selectedOption}
-            onChange={selectHandler}
+               allTodos={todos.length} 
+               unCompletedTodos={todos.filter((t) => !t.isCompleted).length} 
+               CompletedTodos={todos.filter((t) => t.isCompleted).length} 
+               filterTodos={filterTodos}
             />
-            <TodoForm submitTodo={addTodo}/>
             <TodoList 
               todos={filteredTodos} 
               onComplete={completeTodo} 
               onDelete={removeTodo} 
               onUpdateTodo={updateTodo}
             />
+            <TodoForm submitTodo={addTodo}/>
         </div>
     )
 }

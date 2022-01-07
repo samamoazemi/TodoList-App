@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Todo from "./Todo";
-import TodoForm from "./TodoForm";
+import Todo from "../Todo/Todo";
+import TodoForm from "../TodoForm/TodoForm";
 
 const TodoList = ({ todos, onComplete, onDelete, onUpdateTodo }) => {
 
@@ -12,7 +12,7 @@ const TodoList = ({ todos, onComplete, onDelete, onUpdateTodo }) => {
     }
     
     const renderTodos = () => {
-        if (todos.length === 0) return <p>add some todos</p>;
+        // if (todos.length === 0) return <p>add some todos</p>;
 
         return todos.map((todo) => {
                 return(

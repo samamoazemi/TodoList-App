@@ -1,0 +1,35 @@
+.navBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(233, 218, 247);
+    width: 25rem;
+    padding-bottom: 20px;
+}
+.tallys{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.tally{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+.tally span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+
+}
+.selectOption{
+    width: 10rem;
+    height: 25px;
+    border-radius: 5px;
+    text-align: center;
+}

@@ -1,8 +1,11 @@
 import { useEffect, useRef, useState } from "react";
+import "./TodoForm.css";
 
 const TodoForm = (props) => {
+
     const[input, setInput] = useState(props.edit ? props.edit.text  : "" );
     const inputRef = useRef(null)
+
     useEffect(() =>{
         inputRef.current.focus()
     },[]) 
@@ -11,6 +14,7 @@ const TodoForm = (props) => {
         console.log(e.target.value);
         setInput(e.target.value)
     }
+
     const submitHandler = (e) => {
         e.preventDefault()
         if(!input){
@@ -20,9 +24,10 @@ const TodoForm = (props) => {
         props.submitTodo(input);
         setInput("");
     }
+    
     return(
          <form onSubmit={submitHandler}>
-              <div className="formComtrol">
+              <div className="formControl">
               <input 
                type="text" 
                value={input} 

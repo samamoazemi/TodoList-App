@@ -1,0 +1,30 @@
+.todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20rem;
+    height: 4rem;
+    margin: 10px 0;
+    background-color: #e2d7f5;
+    padding: 6px 20px;
+    border-radius: 5px;
+}
+.editBtn{
+    color: #6d28d9;
+    background-color: #fff;
+    border: 1px solid #6d28d9;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.removeBtn{
+    color: rgb(236, 68, 68);
+    background-color: #fff;
+    border: 1px solid rgb(236, 68, 68);
+    margin-left: 10px;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}

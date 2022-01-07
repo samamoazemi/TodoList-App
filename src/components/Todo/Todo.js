@@ -1,3 +1,5 @@
+import "./Todo.css";
+
 const Todo = ({ todo, onComplete, onDelete, onEdit }) => {
     return(
         <div className="todo">
@@ -8,8 +10,8 @@ const Todo = ({ todo, onComplete, onDelete, onEdit }) => {
              {todo.text}
           </div>
           <div>
-             <button className="btn" onClick={onEdit}>Edit</button>
-             <button className="btn remove" onClick={onDelete}>delete</button>
+             <button className="editBtn" onClick={onEdit}>Edit</button>
+             <button className="removeBtn" onClick={onDelete}>delete</button>
           </div>
         </div>
     )
