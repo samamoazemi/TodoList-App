@@ -3,28 +3,30 @@
     justify-content: space-between;
     align-items: center;
     width: 20rem;
-    height: 4rem;
-    margin: 10px 0;
-    background-color: #e2d7f5;
-    padding: 6px 20px;
-    border-radius: 5px;
+    height: 3rem;
+    padding: 0px 20px;
+    border-bottom: 1px solid #ccc;
+    color: #3f3f46;
+}
+.todo:last-child{
+    border: none;
 }
 .editBtn{
-    color: #6d28d9;
-    background-color: #fff;
-    border: 1px solid #6d28d9;
+    color: #4794e0;
+    border: none;
     border-radius: 5px;
     outline: none;
-    padding: 5px 10px;
+    padding: 0px 5px;
     cursor: pointer;
+    font-size: 20px;
 }
 .removeBtn{
-    color: rgb(236, 68, 68);
-    background-color: #fff;
-    border: 1px solid rgb(236, 68, 68);
+    color: #11b886;
+    border: none;
     margin-left: 10px;
     border-radius: 5px;
     outline: none;
-    padding: 5px 10px;
+    padding: 0px 5px;
     cursor: pointer;
+    font-size: 20px;
 }

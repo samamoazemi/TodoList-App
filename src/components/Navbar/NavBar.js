@@ -10,10 +10,20 @@ const[status, setStatus] = useState("All")
     filterTodos(e.target.value)
 }
 
-    if(!unCompletedTodos) return   <h2>set your today todos !</h2>;
+    if(!allTodos) return   <h2>set your today todos !</h2>;
+
+    const date = new Date();
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    let day = days[date.getDay()]; 
+    let month = months[date.getMonth()];
+    let dateOfDay = date.getDate();
 
     return(
       <header className="navBar">
+          <div className="date">
+            {day}, {dateOfDay}, {month}
+          </div>
           <div className="tallys">
             <div className="tally">
              <span>{allTodos}</span> <p>Total</p>

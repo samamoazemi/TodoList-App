@@ -27,8 +27,10 @@ const TodoList = ({ todos, onComplete, onDelete, onUpdateTodo }) => {
             })
     }
 
-    return <div>
-         {edit.id ? <TodoForm submitTodo={editTodo} edit={edit}/> : renderTodos()}
-          </div>
+    return (
+         <div>
+           {edit.id ? <TodoForm submitTodo={editTodo} edit={edit}/> : renderTodos()}
+         </div>
+    )
 }
  export default TodoList;

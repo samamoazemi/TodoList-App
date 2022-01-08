@@ -2,15 +2,16 @@ import { useEffect, useState } from "react";
 import NavBar from "../Navbar/NavBar";
 import TodoForm from "../TodoForm/TodoForm";
 import TodoList from "../TodoList/TodoList";
+import "./TodoApp.css";
 
 const TodoApp = () => {
     const[todos, setTodos] = useState([]);
     const[filteredTodos, setFilteredTodos] = useState([]);
-    const[selectedOption, setSelectedOption] = useState("All")
+    const[status, setStatus] = useState("All")
 
     useEffect(() => {
-        filterTodos(selectedOption.value)
-    },[todos, selectedOption])
+        filterTodos(status.value)
+    },[todos, status])
 
     const addTodo = (input) => {
         const newTodo = { 
@@ -62,7 +63,7 @@ const TodoApp = () => {
 
     const selectHandler = (e) => {
         console.log(e)
-        setSelectedOption(e)
+        setStatus(e)
         filterTodos(e.value)
     }
 

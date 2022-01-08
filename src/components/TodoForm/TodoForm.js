@@ -39,7 +39,7 @@ const TodoForm = (props) => {
                  className={`btn ${ props.edit ? "updateTodo" : "addTodo"}`}
                  type="submit"
                 >
-                   {props.edit ? "Update" : "Add"}
+                   {props.edit ? "edit" : "Add"}
                 </button>
               </div>
         </form>
