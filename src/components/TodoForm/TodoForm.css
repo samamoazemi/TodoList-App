@@ -1,10 +1,14 @@
 .formControl{
     height: 5rem;
-    width: 30rem;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 1px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
 }
 input{
     border: 1px solid #ccc;
@@ -13,7 +17,7 @@ input{
     outline: none;
     width: 13rem;
     height: 2rem;
-    margin: 20px 0px; 
+    margin: 20px 0px 35px 0px; 
 }
 input:focus{
     border: 1px solid rgb(161, 161, 161);
@@ -23,6 +27,7 @@ input:focus{
     background-color: #62a5e1;
     border: none;
     border-radius: 0px 5px 5px 0px;
+    margin: 20px 0px 35px 0px; 
     outline: none;
     padding: 5px 10px;
     cursor: pointer;
@@ -31,5 +36,5 @@ input:focus{
 }
 .addTodo{
     color: #fff;
-    background-color: #26b68b;
+    background-color: #4eb8af;
   }

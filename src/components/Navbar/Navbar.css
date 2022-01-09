@@ -1,74 +1,63 @@
-h2{
-    padding-top: 20px;
+h2 {
+  padding: 20px 0px 10px 0px;
+  color: rgb(87, 87, 87);
 }
-.navBar{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background: #43cea2;
-    background: -webkit-linear-gradient(to right, #3d89d4, #5adab1);  
-    background: linear-gradient(to right, #63a3e4, #4cd4a9); 
-    width: 25rem;
-    padding-bottom: 20px;
-    margin-bottom: 15px;
-    border-radius: 10px 10px 0px 0px ;
-}
-
-.tallys{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 25rem;
-}
-.tally{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 20px;
-}
-.tally span{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bolder;
-    color: white;
-}
-.tally p{
-    font-size: 14px;
-    color: white;
-}
-.selectOption{
-    width: 10rem;
-    height: 25px;
-    border-radius: 5px;
-    text-align: center;
-    border: none;
-}
-.date{
-    font-weight: bold;
-    font-size: 22px;
-    color: white;
-    margin-top: 20px;
+.navBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #43cea2;
+  background: -webkit-linear-gradient(to right, #3d89d4, #5adab1);
+  background: linear-gradient(to right, #63a3e4, #4cd4a9);
+  width: 25rem;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px 10px 0px 0px;
 }
 
-
-
-
-/* background: linear-gradient(-45deg, #2cdafd, #72b8fd, #9f9ffd, #8982eb);
-background-size: 400% 400%;
-animation: gradient 4s ease infinite;
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+.tallys {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 25rem;
 }
-   */
+.tally {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+}
+.tally span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  color: white;
+  font-size: 18px;
+}
+.tally p {
+  font-size: 14px;
+  color: white;
+}
+.selectOption {
+  width: 10rem;
+  height: 25px;
+  border-radius: 5px;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+.date {
+  font-weight: bold;
+  font-size: 22px;
+  color: white;
+  margin-top: 20px;
+}
+.nothingMessage {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+}

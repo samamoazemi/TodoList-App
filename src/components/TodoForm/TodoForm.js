@@ -22,6 +22,7 @@ const TodoForm = (props) => {
             return;
         }
         props.submitTodo(input);
+        props.setOpenAddForm(false);
         setInput("");
     }
     

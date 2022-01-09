@@ -1,11 +1,4 @@
-.App {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-  padding: 10px;
-}
+
 .App h1 {
   margin-bottom: 30px;
   color: #3f3f46;
@@ -16,5 +9,5 @@
 }
 .completed {
   text-decoration: line-through;
-  color: #ccc;
+  color: rgb(148, 148, 148);
 }

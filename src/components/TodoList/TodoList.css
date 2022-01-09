@@ -1,0 +1,41 @@
+.allTodos {
+  overflow: auto;
+}
+.allTodos.hasItem {
+  height: 51vh;
+}
+.allTodos::-webkit-scrollbar {
+  width: 1px;
+}
+.allTodos::-webkit-scrollbar-track {
+  background: #efefef;
+}
+.allTodos::-webkit-scrollbar-thumb {
+  background-color: #efefef;
+  border-radius: 20px;
+}
+.addNewTask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px 30px 0px;
+
+}
+.addNewTask button {
+  border: none;
+  color: #fff;
+  background-color: #4eb8af;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+.addNewTask.noTask {
+  position: absolute;
+  top: 49%;
+  transform: translateY(-50%);
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+.addNewTask.noTask button {
+  padding: 10px 20px;
+}

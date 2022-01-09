@@ -1,16 +1,15 @@
-import { useState } from 'react';
 import "./Navbar.css";
 
-const NavBar = ({allTodos ,CompletedTodos, unCompletedTodos, filterTodos}) => {
+const NavBar = ({allTodos ,CompletedTodos, unCompletedTodos, status, changeHandler}) => {
 
-const[status, setStatus] = useState("All")
 
-  const changeHandler = (e) => {
-    setStatus(e.target.value)
-    filterTodos(e.target.value)
-}
 
-    if(!allTodos) return   <h2>set your today todos !</h2>;
+//   const changeHandler = (e) => {
+//     setStatus(e.target.value)
+//     filterTodos(e.target.value)
+// }
+
+    if(!allTodos) return   <h2 className="nothingMessage">set your today todos !</h2>;
 
     const date = new Date();
     const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];

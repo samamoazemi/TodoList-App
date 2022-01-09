@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react";
 import NavBar from "../Navbar/NavBar";
-import TodoForm from "../TodoForm/TodoForm";
 import TodoList from "../TodoList/TodoList";
 import "./TodoApp.css";
 
 const TodoApp = () => {
     const[todos, setTodos] = useState([]);
     const[filteredTodos, setFilteredTodos] = useState([]);
-    const[status, setStatus] = useState("All")
+    const[status, setStatus] = useState("All");
+    const[openAddForm, setOpenAddForm] = useState(false);
 
     useEffect(() => {
-        filterTodos(status.value)
+        filterTodos(status)
     },[todos, status])
 
     const addTodo = (input) => {
@@ -62,27 +62,38 @@ const TodoApp = () => {
     }
 
     const selectHandler = (e) => {
-        console.log(e)
-        setStatus(e)
-        filterTodos(e.value)
+        console.log(e.target.value)
+        setStatus(e.target.value)
+        filterTodos(e.target.value)
+    }
+    const openNewTaskBtn = () => {
+        setOpenAddForm(true);
     }
 
     return(
-        <div className="container">
+        <section className="TodoApp">
+            <div className="container">
             <NavBar 
                allTodos={todos.length} 
                unCompletedTodos={todos.filter((t) => !t.isCompleted).length} 
                CompletedTodos={todos.filter((t) => t.isCompleted).length} 
-               filterTodos={filterTodos}
+               status={status}
+               changeHandler={selectHandler}
             />
             <TodoList 
               todos={filteredTodos} 
               onComplete={completeTodo} 
               onDelete={removeTodo} 
               onUpdateTodo={updateTodo}
+              addTodo={addTodo}
+              openAddForm={openAddForm}
+              setOpenAddForm={setOpenAddForm}
+              openNewTaskBtn = {openNewTaskBtn}
             />
-            <TodoForm submitTodo={addTodo}/>
+            
+            {/* <TodoForm submitTodo={addTodo}/> */}
         </div>
+        </section>
     )
 }
 export default TodoApp;
