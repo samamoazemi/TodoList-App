@@ -38,3 +38,12 @@ input:focus{
     color: #fff;
     background-color: #4eb8af;
   }
+
+  @media only screen and (max-width: 768px) {
+
+    .formControl {
+      top: 48%;
+    }
+
+  }
+  

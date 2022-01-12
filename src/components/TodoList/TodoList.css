@@ -18,15 +18,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0px 30px 0px;
+  margin: 10px 0px 30px 0px;
 
 }
 .addNewTask button {
   border: none;
   color: #fff;
   background-color: #4eb8af;
-  padding: 6px 10px;
+  padding: 9px 18px;
   border-radius: 5px;
+  align-items: center;
 }
 .addNewTask.noTask {
   position: absolute;
@@ -38,4 +39,17 @@
 }
 .addNewTask.noTask button {
   padding: 10px 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .allTodos.hasItem {
+    height: 65vh;
+  }
+  .addNewTask {
+    margin: 30px 0px;
+  }
+  .allTodos {
+    height: 70vh;
+  }
+
 }

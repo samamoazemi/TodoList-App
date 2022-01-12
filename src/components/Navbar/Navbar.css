@@ -7,7 +7,6 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background: #43cea2;
   background: -webkit-linear-gradient(to right, #3d89d4, #5adab1);
   background: linear-gradient(to right, #63a3e4, #4cd4a9);
   width: 25rem;
@@ -28,7 +27,7 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 20px;
+  margin: 22px 0px;
 }
 .tally span {
   display: flex;
@@ -36,14 +35,14 @@ h2 {
   justify-content: center;
   font-weight: bolder;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
 }
 .tally p {
-  font-size: 14px;
+  font-size: 13px;
   color: white;
 }
 .selectOption {
-  width: 10rem;
+  width: 16.5rem;
   height: 25px;
   border-radius: 5px;
   text-align: center;
@@ -60,4 +59,15 @@ h2 {
   position: absolute;
   top: 40%;
   transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 768px) {
+  .nothingMessage {
+    top: 42%;
+  }
+  .navBar {
+    border-radius: 0px;
+    width: 100%;
+  }
+
 }
